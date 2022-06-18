@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+//include the styles
+import "../../styles/navbar.css";
+
 export const Navbar = () => {
+	const [activeView, setActiveView] = useState("Peliculas");
+
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
+		<Container fluid className="navbar py-4">
+			<Row>
+				<Col xs={2}></Col>
+				<Col xs={8}>
+					<h2 className="m-0">{activeView}</h2>
+				</Col>
+				<Col xs={2}></Col>
+			</Row>
+		</Container>
 	);
 };

@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
+import { MainMenu } from "./component/mainMenu";
 import { Home } from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
+import { MainMovie } from "./views/Movies/mainMovie";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -17,28 +17,26 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div>
+		<>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+						{/* movies routes */}
 						<Route exact path="/">
-							<Home />
+							<MainMovie />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
-						</Route>
+						{/* series routes */}
+						{/* billboard routes */}
+						{/* user profile routes */}
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
 					</Switch>
-					<Footer />
+					<MainMenu />
 				</ScrollToTop>
 			</BrowserRouter>
-		</div>
+		</>
 	);
 };
 
