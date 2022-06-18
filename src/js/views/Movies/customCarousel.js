@@ -24,8 +24,8 @@ export const CustomCarousel = () => {
 						<Row xs={2} className="g-1">
 							{parentElement.map((childElement, j) => {
 								return (
-									<Col xs={6}>
-										<Card key={j} className="customCard p-0">
+									<Col xs={6} key={j}>
+										<Card className="customCard p-0">
 											<Card.Img variant="top" src={childElement?.src} />
 											<Card.Body>
 												<Card.Text>{childElement?.name}</Card.Text>
