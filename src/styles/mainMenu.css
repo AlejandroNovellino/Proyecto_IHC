@@ -2,3 +2,8 @@
 	background-color: #081826;
 	border-radius: 15px 15px 0px 0px;
 }
+
+.selectedView {
+	border-radius: 15px;
+	background-color: #1d4259;
+}

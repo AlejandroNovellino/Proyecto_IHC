@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { MainMenu } from "./component/mainMenu";
@@ -22,17 +22,19 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+						{/* series routes */}
 						{/* movies routes */}
-						<Route exact path="/">
+						<Route exact path="/movies">
 							<MainMovie />
 						</Route>
-						{/* series routes */}
-						{/* billboard routes */}
+						{/* calendar routes */}
 						{/* user profile routes */}
-						<Route>
-							<h1>Not found!</h1>
-						</Route>
+						{/* redirect to the main view */}
+						<Redirect from="/" to="/movies" />
 					</Switch>
+					<br />
+					<br />
+					<br />
 					<MainMenu />
 				</ScrollToTop>
 			</BrowserRouter>
