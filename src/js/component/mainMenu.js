@@ -21,6 +21,9 @@ export const MainMenu = () => {
 
 	// click handler on the menu options
 	const viewHandler = selectedView => {
+		// set the active view index
+		actions.setActiveViewIndex(selectedView);
+		// push the url selected
 		switch (selectedView) {
 			case 1:
 				history.push("/series");
@@ -42,35 +45,40 @@ export const MainMenu = () => {
 
 	return (
 		<Container fluid className="mainMenu fixed-bottom py-3">
-			<Row className="justify-content-around text-white">
+			<Row className="justify-content-around text-white px-1">
 				<Col
 					className={
 						store?.activeViewIndex == 1 ? selectedStyle : notSelectedStyle
-					}>
+					}
+					onClick={() => viewHandler(1)}>
 					<FontAwesomeIcon icon="fas fa-tv-alt" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 2 ? selectedStyle : notSelectedStyle
-					}>
+					}
+					onClick={() => viewHandler(2)}>
 					<FontAwesomeIcon icon="fas fa-film" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 3 ? selectedStyle : notSelectedStyle
-					}>
+					}
+					onClick={() => viewHandler(3)}>
 					<FontAwesomeIcon icon="fas fa-search" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 4 ? selectedStyle : notSelectedStyle
-					}>
+					}
+					onClick={() => viewHandler(4)}>
 					<FontAwesomeIcon icon="fas fa-calendar" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 5 ? selectedStyle : notSelectedStyle
-					}>
+					}
+					onClick={() => viewHandler(5)}>
 					<FontAwesomeIcon icon="fas fa-user" size="lg" />
 				</Col>
 			</Row>

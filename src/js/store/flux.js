@@ -40,6 +40,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				//reset the global store
 				setStore({ demo: demo });
 			},
+			setActiveViewIndex: index => {
+				let store = getStore();
+				store.activeViewIndex = index;
+				setStore(store);
+			},
 		},
 	};
 };

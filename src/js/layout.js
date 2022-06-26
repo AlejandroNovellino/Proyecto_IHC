@@ -3,12 +3,14 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { MainMenu } from "./component/mainMenu";
-import { Home } from "./views/home";
 import { MainMovie } from "./views/Movies/mainMovie";
+import { MainSeries } from "./views/Series/mainSeries";
+import { MainSearch } from "./views/Search/mainSearch";
+import { MainCalendar } from "./views/Calendar/mainCalendar";
+import { MainProfile } from "./views/Profile/mainProfile";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
 
 //create your first component
 const Layout = () => {
@@ -23,12 +25,25 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						{/* series routes */}
+						<Route exact path="/series">
+							<MainSeries />
+						</Route>
 						{/* movies routes */}
 						<Route exact path="/movies">
 							<MainMovie />
 						</Route>
+						{/* search routes */}
+						<Route exact path="/search">
+							<MainSearch />
+						</Route>
 						{/* calendar routes */}
+						<Route exact path="/calendar">
+							<MainCalendar />
+						</Route>
 						{/* user profile routes */}
+						<Route exact path="/profile">
+							<MainProfile />
+						</Route>
 						{/* redirect to the main view */}
 						<Redirect from="/" to="/movies" />
 					</Switch>
