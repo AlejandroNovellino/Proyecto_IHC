@@ -8,14 +8,12 @@ import {
 	CardGroup,
 } from "react-bootstrap";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { infoToDisplay } from "../../variables.js";
-
 //include the styles
-import "./../../../styles/customCarousel.css";
+import "./../../styles/customCarousel.css";
 
-export const CustomCarousel = () => {
+export const CustomCarousel = props => {
+	const infoToDisplay = props.infoToDisplay;
+
 	return (
 		<Carousel indicators={false} controls={false} className="">
 			{infoToDisplay.map((parentElement, i) => {

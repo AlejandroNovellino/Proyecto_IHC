@@ -3,7 +3,9 @@ import { Container, Row, Col, Carousel } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { CustomCarousel } from "./customCarousel";
+import { CustomCarousel } from "../../component/customCarousel";
+
+import { mainMovies } from "../../variables.js";
 
 //include the styles
 import "../../../styles/utilities.css";
@@ -20,7 +22,7 @@ export const MainMovie = () => {
 			{/*row of saved films*/}
 			<Row className="my-3">
 				<Col xs={12}>
-					<CustomCarousel />
+					<CustomCarousel infoToDisplay={mainMovies} />
 				</Col>
 			</Row>
 			{/*tittle of recommended films*/}
@@ -32,7 +34,7 @@ export const MainMovie = () => {
 			{/*row of recommended films*/}
 			<Row className="my-3">
 				<Col xs={12}>
-					<CustomCarousel />
+					<CustomCarousel infoToDisplay={mainMovies} />
 				</Col>
 			</Row>
 			{/*tittle of list*/}
@@ -44,7 +46,7 @@ export const MainMovie = () => {
 			{/*row of saved lists*/}
 			<Row className="my-3">
 				<Col xs={12}>
-					<CustomCarousel />
+					<CustomCarousel infoToDisplay={mainMovies} />
 				</Col>
 			</Row>
 		</Container>
