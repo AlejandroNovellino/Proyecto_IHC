@@ -1,8 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			view: ["SERIES", "MOVIES", "SEARCH", "PROFILE", "BILLBOARD"],
-			activeViewIndex: 2,
+			views: ["SERIES", "MOVIES", "SEARCH", "PROFILE", "BILLBOARD"],
+			activeViewIndex: 1,
 			demo: [
 				{
 					title: "FIRST",
@@ -39,6 +39,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			getActiveView: _ => {
+				let views = getStore().views;
+				let index = getStore().activeViewIndex;
+				return views[index];
 			},
 			setActiveViewIndex: index => {
 				let store = getStore();

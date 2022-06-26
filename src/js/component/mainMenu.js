@@ -25,19 +25,19 @@ export const MainMenu = () => {
 		actions.setActiveViewIndex(selectedView);
 		// push the url selected
 		switch (selectedView) {
-			case 1:
+			case 0:
 				history.push("/series");
 				break;
-			case 2:
+			case 1:
 				history.push("/movies");
 				break;
-			case 3:
+			case 2:
 				history.push("/search");
 				break;
-			case 4:
+			case 3:
 				history.push("/calendar");
 				break;
-			case 5:
+			case 4:
 				history.push("/profile");
 				break;
 		}
@@ -48,37 +48,37 @@ export const MainMenu = () => {
 			<Row className="justify-content-around text-white px-1">
 				<Col
 					className={
+						store?.activeViewIndex == 0 ? selectedStyle : notSelectedStyle
+					}
+					onClick={() => viewHandler(0)}>
+					<FontAwesomeIcon icon="fas fa-tv-alt" size="lg" />
+				</Col>
+				<Col
+					className={
 						store?.activeViewIndex == 1 ? selectedStyle : notSelectedStyle
 					}
 					onClick={() => viewHandler(1)}>
-					<FontAwesomeIcon icon="fas fa-tv-alt" size="lg" />
+					<FontAwesomeIcon icon="fas fa-film" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 2 ? selectedStyle : notSelectedStyle
 					}
 					onClick={() => viewHandler(2)}>
-					<FontAwesomeIcon icon="fas fa-film" size="lg" />
+					<FontAwesomeIcon icon="fas fa-search" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 3 ? selectedStyle : notSelectedStyle
 					}
 					onClick={() => viewHandler(3)}>
-					<FontAwesomeIcon icon="fas fa-search" size="lg" />
+					<FontAwesomeIcon icon="fas fa-calendar" size="lg" />
 				</Col>
 				<Col
 					className={
 						store?.activeViewIndex == 4 ? selectedStyle : notSelectedStyle
 					}
 					onClick={() => viewHandler(4)}>
-					<FontAwesomeIcon icon="fas fa-calendar" size="lg" />
-				</Col>
-				<Col
-					className={
-						store?.activeViewIndex == 5 ? selectedStyle : notSelectedStyle
-					}
-					onClick={() => viewHandler(5)}>
 					<FontAwesomeIcon icon="fas fa-user" size="lg" />
 				</Col>
 			</Row>
