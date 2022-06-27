@@ -54,9 +54,6 @@ node_modules/
 
 public/
 
-# ignore images
-src/img/
-
 # ignore the dist directory were our bundle files are going to be
 !.gitkeep
 !.gitpod.yml
