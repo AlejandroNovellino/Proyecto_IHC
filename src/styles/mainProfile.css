@@ -1,0 +1,11 @@
+.customInput.customInput {
+	background-color: #1d4259;
+	border-width: 2px;
+	border-color: #081826;
+	color: white;
+}
+
+.customImage.customImage {
+	border-color: #081826;
+	border-width: thick;
+}

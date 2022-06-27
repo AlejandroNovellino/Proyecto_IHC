@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			views: ["SERIES", "MOVIES", "SEARCH", "PROFILE", "BILLBOARD"],
+			views: ["SERIES", "MOVIES", "SEARCH", "BILLBOARD", "PROFILE"],
 			activeViewIndex: 1,
 			demo: [
 				{

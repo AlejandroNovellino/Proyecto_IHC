@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
-
+// font awesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+// import custom components
 import { CustomCarousel } from "../../component/customCarousel";
-
-import { mainMovies } from "../../variables.js";
+// import variables of the info to display
+import { mainMovies } from "../../variables/mainMenuVariables.js";
 
 //include the styles
 import "../../../styles/utilities.css";
