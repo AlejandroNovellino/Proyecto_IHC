@@ -61,7 +61,7 @@ export const MainSearch = () => {
 						{/*row of popular series*/}
 						<Row className="my-3">
 							<Col xs={12}>
-								<CustomCarousel infoToDisplay={mainMovies} />
+								<CustomCarousel infoToDisplay={popularSeries} />
 							</Col>
 						</Row>
 						{/*tittle of popular films*/}
