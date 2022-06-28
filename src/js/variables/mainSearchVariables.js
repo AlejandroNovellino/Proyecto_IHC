@@ -7,30 +7,36 @@ import img6 from "../../img/stranger.jpg";
 export const popularSeries = [
 	[
 		{
+			id: 0,
 			name: "WandaVision",
 			src: img1,
 		},
 		{
+			id: 1,
 			name: "Dark",
 			src: img2,
 		},
 	],
 	[
 		{
+			id: 2,
 			name: "Kenobi",
 			src: img3,
 		},
 		{
+			id: 3,
 			name: "Death Note",
 			src: img4,
 		},
 	],
 	[
 		{
+			id: 4,
 			name: "Euphoria",
 			src: img5,
 		},
 		{
+			id: 5,
 			name: "Stranger Things",
 			src: img6,
 		},

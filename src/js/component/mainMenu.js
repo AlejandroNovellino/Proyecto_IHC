@@ -21,6 +21,8 @@ export const MainMenu = () => {
 
 	// click handler on the menu options
 	const viewHandler = selectedView => {
+		// empty the info to display movie
+		actions.emptyElementToDisplay();
 		// set the active view index
 		actions.setActiveViewIndex(selectedView);
 		// push the url selected

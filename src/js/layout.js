@@ -4,6 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { MainMenu } from "./component/mainMenu";
 import { MainMovie } from "./views/Movies/mainMovie";
+import { MovieInfo } from "./views/Movies/movieInfo";
 import { MainSeries } from "./views/Series/mainSeries";
 import { MainSearch } from "./views/Search/mainSearch";
 import { MainCalendar } from "./views/Calendar/mainCalendar";
@@ -31,6 +32,9 @@ const Layout = () => {
 						{/* movies routes */}
 						<Route exact path="/movies">
 							<MainMovie />
+						</Route>
+						<Route exact path="/movie/info">
+							<MovieInfo />
 						</Route>
 						{/* search routes */}
 						<Route exact path="/search">

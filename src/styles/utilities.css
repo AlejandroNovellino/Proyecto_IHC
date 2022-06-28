@@ -1,3 +1,8 @@
 .backgroundHelper {
 	background-color: #081826;
 }
+
+.synopsisContainer {
+	background-color: #081826;
+	border-radius: 15px;
+}
