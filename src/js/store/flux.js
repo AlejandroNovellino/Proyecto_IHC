@@ -1,6 +1,3 @@
-// import variables of the info to display
-import { mainMovies } from "../variables/mainMenuVariables.js";
-
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {

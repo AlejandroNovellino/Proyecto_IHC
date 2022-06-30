@@ -12,7 +12,7 @@ import { useHistory } from "react-router-dom";
 // import context
 import { Context } from "../../store/appContext";
 // import variables of the info to display
-import { mainMovies } from "../../variables/mainMenuVariables.js";
+import { mainMovies } from "../../variables/mainMoviesVariables";
 import { popularSeries } from "../../variables/mainSearchVariables";
 
 export const MainSearch = () => {

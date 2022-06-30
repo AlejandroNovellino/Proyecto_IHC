@@ -4,8 +4,10 @@ import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import custom components
 import { CustomCarousel } from "../../component/customCarousel";
+import { ListCarousel } from "../../component/listsCarousel";
 // import variables of the info to display
-import { mainMovies } from "../../variables/mainMenuVariables.js";
+import { mainMovies } from "../../variables/mainMoviesVariables";
+import { userLists } from "../../variables/userList";
 
 //include the styles
 import "../../../styles/utilities.css";
@@ -46,7 +48,7 @@ export const MainMovie = () => {
 			{/*row of saved lists*/}
 			<Row className="my-3">
 				<Col xs={12}>
-					<CustomCarousel infoToDisplay={mainMovies} />
+					<ListCarousel infoToDisplay={userLists} />
 				</Col>
 			</Row>
 		</Container>

@@ -3,6 +3,8 @@ import img2 from "../../img/doctorstrange.jpg";
 import img3 from "../../img/joker.jpg";
 import img4 from "../../img/her.jpg";
 import img5 from "../../img/shrek2.jpg";
+import img6 from "../../img/kimetsu.jpg";
+
 export const mainMovies = [
 	[
 		{
@@ -18,7 +20,7 @@ export const mainMovies = [
 		{
 			id: 1,
 			name: "Kimetsu",
-			src: "https://m.media-amazon.com/images/I/91VivF555eL._AC_SY679_.jpg",
+			src: img6,
 		},
 	],
 	[
