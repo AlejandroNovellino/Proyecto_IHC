@@ -8,7 +8,37 @@ import img7 from "../../img/mandalorian.jpg";
 import img8 from "../../img/squidgame.jpg";
 import img9 from "../../img/witcher.jpg";
 import img10 from "../../img/arcane.jpg";
+
+import img11 from "../../img/matrix.jpg";
+import img12 from "../../img/mary_poppins_returns.png";
+import img13 from "../../img/malevolence.jpg";
+import img14 from "../../img/maradona.jpg";
+
 export const popularSeries = [
+	[
+		{
+			id: 6,
+			name: "The Mandalorian",
+			src: img7,
+		},
+		{
+			id: 7,
+			name: "El Juego del Calamar",
+			src: img8,
+		},
+	],
+	[
+		{
+			id: 8,
+			name: "The Witcher",
+			src: img9,
+		},
+		{
+			id: 9,
+			name: "Arcane",
+			src: img10,
+		},
+	],
 	[
 		{
 			id: 0,
@@ -45,28 +75,31 @@ export const popularSeries = [
 			src: img6,
 		},
 	],
+];
+
+export const searchExample = [
 	[
 		{
-			id: 6,
-			name: "The Mandalorian",
-			src: img7,
+			id: 0,
+			name: "Matrix",
+			src: img11,
 		},
 		{
-			id: 7,
-			name: "El Juego del Calamar",
-			src: img8,
+			id: 1,
+			name: "Mary Poppings Regresa",
+			src: img12,
 		},
 	],
 	[
 		{
-			id: 8,
-			name: "The Witcher",
-			src: img9,
+			id: 2,
+			name: "Malevolence",
+			src: img13,
 		},
 		{
-			id: 9,
-			name: "Arcane",
-			src: img10,
+			id: 3,
+			name: "Maradona",
+			src: img14,
 		},
 	],
 ];
