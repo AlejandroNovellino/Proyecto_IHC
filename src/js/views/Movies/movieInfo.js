@@ -23,7 +23,11 @@ export const MovieInfo = () => {
 			{/*movie image*/}
 			<Row className="mb-4">
 				<Col xs={12}>
-					<Image src={movie?.src} fluid className="customImage" />
+					<Image
+						src={movie?.src}
+						fluid
+						className="customImage d-block m-auto"
+					/>
 				</Col>
 			</Row>
 			{/*movie synopsis*/}

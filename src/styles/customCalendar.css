@@ -1,0 +1,11 @@
+.customCalendar {
+	background-color: #081826;
+}
+
+.fc-theme-bootstrap5-shaded {
+	background-color: #09070d;
+}
+
+.fc .fc-list-event:hover td {
+	background-color: #1d4259;
+}
