@@ -40,6 +40,11 @@ export const MainSeries = () => {
 		},
 	];
 
+	const handleClickOnCard = movie => {
+		actions.setElementToDisplay(movie);
+		history.push("/movie/info");
+	};
+
 	const cardInfoSin = [
 		{ image: img3, title: "Obiwan Kenobi", text: "Episodio 1 - Parte 1" },
 		{ image: img4, title: "Death Note", text: "Episodio 1 - Renacimiento" },
@@ -58,7 +63,8 @@ export const MainSeries = () => {
 					backgroundColor: "#081826",
 				}}
 				key={index}
-				className="box">
+				className="box"
+				onClick={_ => handleClickOnCard(card)}>
 				<Card.Img variant="top" src={card.image} />
 				<Card.Body>
 					<Card.Title>{card.title}</Card.Title>

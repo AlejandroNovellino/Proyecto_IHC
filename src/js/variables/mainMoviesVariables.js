@@ -4,6 +4,10 @@ import img3 from "../../img/joker.jpg";
 import img4 from "../../img/her.jpg";
 import img5 from "../../img/shrek2.jpg";
 import img6 from "../../img/kimetsu.jpg";
+import img7 from "../../img/dune.jpg";
+import img8 from "../../img/enredados.jpg";
+import img9 from "../../img/insideout.jpg";
+import img10 from "../../img/parasitos.jpg";
 
 export const mainMovies = [
 	[
@@ -45,6 +49,30 @@ export const mainMovies = [
 			id: 5,
 			name: "Shrek 2",
 			src: img5,
+		},
+	],
+	[
+		{
+			id: 6,
+			name: "Dune",
+			src: img7,
+		},
+		{
+			id: 7,
+			name: "Enredados",
+			src: img8,
+		},
+	],
+	[
+		{
+			id: 8,
+			name: "Intensamente",
+			src: img9,
+		},
+		{
+			id: 5,
+			name: "Parasitos",
+			src: img10,
 		},
 	],
 ];

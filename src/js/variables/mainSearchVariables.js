@@ -4,6 +4,10 @@ import img3 from "../../img/kenobi.jpg";
 import img4 from "../../img/deathnote.jpg";
 import img5 from "../../img/euphoria.jpg";
 import img6 from "../../img/stranger.jpg";
+import img7 from "../../img/mandalorian.jpg";
+import img8 from "../../img/squidgame.jpg";
+import img9 from "../../img/witcher.jpg";
+import img10 from "../../img/arcane.jpg";
 export const popularSeries = [
 	[
 		{
@@ -39,6 +43,30 @@ export const popularSeries = [
 			id: 5,
 			name: "Stranger Things",
 			src: img6,
+		},
+	],
+	[
+		{
+			id: 6,
+			name: "The Mandalorian",
+			src: img7,
+		},
+		{
+			id: 7,
+			name: "El Juego del Calamar",
+			src: img8,
+		},
+	],
+	[
+		{
+			id: 8,
+			name: "The Witcher",
+			src: img9,
+		},
+		{
+			id: 9,
+			name: "Arcane",
+			src: img10,
 		},
 	],
 ];
