@@ -13,8 +13,11 @@ import { useHistory } from "react-router-dom";
 // import context
 import { Context } from "../../store/appContext";
 // import variables of the info to display
-import { mainMovies } from "../../variables/mainMoviesVariables";
-import { popularSeries } from "../../variables/mainSearchVariables";
+import { popularMovies } from "../../variables/mainMoviesVariables";
+import {
+	popularSeries,
+	searchExample,
+} from "../../variables/mainSearchVariables";
 
 export const MainSearch = () => {
 	// component variables
@@ -74,7 +77,7 @@ export const MainSearch = () => {
 						{/*row of popular films*/}
 						<Row className="my-3">
 							<Col xs={12}>
-								<CustomCarousel infoToDisplay={mainMovies} />
+								<CustomCarousel infoToDisplay={popularMovies} />
 							</Col>
 						</Row>
 					</>
@@ -87,7 +90,7 @@ export const MainSearch = () => {
 						{/*row of searched element*/}
 						<Row className="my-3">
 							<Col xs={12}>
-								<CustomCarousel infoToDisplay={mainMovies} />
+								<CustomCarousel infoToDisplay={searchExample} />
 							</Col>
 						</Row>
 					</>

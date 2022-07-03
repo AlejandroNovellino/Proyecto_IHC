@@ -10,6 +10,10 @@ import { Context } from "../../store/appContext";
 
 //include the styles
 import "../../../styles/utilities.css";
+// import streaming logos
+import disneyLogo from "../../../img/logos/netflix.png";
+import netflixLogo from "../../../img/logos/disney_plus.png";
+import huluLogo from "../../../img/logos/hulu.png";
 
 export const SerieInfo = () => {
 	// user the context
@@ -47,22 +51,30 @@ export const SerieInfo = () => {
 				</Col>
 			</Row>
 			{/*where to see the serie*/}
-			<Row className="justify-content-center mt-3 mb-3">
+			<Row className="justify-content-center mt-1 mb-3">
 				<Col xs={12} className="text-center">
 					<h4>Donde verla?</h4>
 				</Col>
 			</Row>
-			<Row className="justify-content-center">
-				<Col xs={3}>
-					<p>o1</p>
+			<Row className="justify-content-center mb-3">
+				<Col xs={4}>
+					<Image
+						src={netflixLogo}
+						fluid
+						className="customImage d-block m-auto"
+					/>
 				</Col>
-				<Col xs={3}>
-					<p>o2</p>
+				<Col xs={4}>
+					<Image
+						src={disneyLogo}
+						fluid
+						className="customImage d-block m-auto"
+					/>
 				</Col>
-				<Col xs={3}>
-					<p>o2</p>
+				<Col xs={4}>
+					<Image src={huluLogo} fluid className="customImage d-block m-auto" />
 				</Col>
-			</Row>
+			</Row>	
             {/*Cast*/}
 			<Row className="justify-content-center mt-3 mb-3">
 				<Col xs={12} className="text-center">

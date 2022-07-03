@@ -6,7 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CustomCarousel } from "../../component/customCarousel";
 import { ListCarousel } from "../../component/listsCarousel";
 // import variables of the info to display
-import { mainMovies } from "../../variables/mainMoviesVariables";
+import {
+	savedMovies,
+	recommendedMovies,
+} from "../../variables/mainMoviesVariables";
 import { userLists } from "../../variables/userList";
 
 //include the styles
@@ -24,7 +27,7 @@ export const MainMovie = () => {
 			{/*row of saved films*/}
 			<Row className="my-3">
 				<Col xs={12}>
-					<CustomCarousel infoToDisplay={mainMovies} />
+					<CustomCarousel infoToDisplay={savedMovies} />
 				</Col>
 			</Row>
 			{/*tittle of recommended films*/}
@@ -36,7 +39,7 @@ export const MainMovie = () => {
 			{/*row of recommended films*/}
 			<Row className="my-3">
 				<Col xs={12}>
-					<CustomCarousel infoToDisplay={mainMovies} />
+					<CustomCarousel infoToDisplay={recommendedMovies} />
 				</Col>
 			</Row>
 			{/*tittle of list*/}

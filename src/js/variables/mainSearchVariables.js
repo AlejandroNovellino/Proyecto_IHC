@@ -18,6 +18,10 @@ import img7Banner from "../../img/mandalorianBanner.jpg";
 import img8Banner from "../../img/squidgameBanner.jpg";
 import img9Banner from "../../img/witcherBanner.jpg";
 import img10Banner from "../../img/arcaneBanner.jpg";
+import img11 from "../../img/matrix.jpg";
+import img12 from "../../img/mary_poppins_returns.png";
+import img13 from "../../img/malevolence.jpg";
+import img14 from "../../img/maradona.jpg";
 export const popularSeries = [
 	[
 		{
@@ -97,6 +101,33 @@ export const popularSeries = [
 			src: img10,
 			image: img10Banner,
 			about: "Mientras la discordia separa las ciudades gemelas de Piltóver y Zaun, dos hermanas se enfrentan en una guerra feroz entre tecnologías mágicas y convicciones opuestas.",
+		},
+	],
+];
+
+export const searchExample = [
+	[
+		{
+			id: 0,
+			name: "Matrix",
+			src: img11,
+		},
+		{
+			id: 1,
+			name: "Mary Poppings Regresa",
+			src: img12,
+		},
+	],
+	[
+		{
+			id: 2,
+			name: "Malevolence",
+			src: img13,
+		},
+		{
+			id: 3,
+			name: "Maradona",
+			src: img14,
 		},
 	],
 ];

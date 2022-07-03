@@ -7,8 +7,11 @@ import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import context
 import { Context } from "../../store/appContext";
-
-//include the styles
+// import streaming logos
+import disneyLogo from "../../../img/logos/netflix.png";
+import netflixLogo from "../../../img/logos/disney_plus.png";
+import huluLogo from "../../../img/logos/hulu.png";
+// include the styles
 import "../../../styles/utilities.css";
 
 export const MovieInfo = () => {
@@ -31,7 +34,7 @@ export const MovieInfo = () => {
 				</Col>
 			</Row>
 			{/*movie synopsis*/}
-			<Row className="px-2">
+			<Row className="px-3">
 				<Col xs={12} className="synopsisContainer p-3">
 					<p className="text-center m-0">{movie?.synopsis}</p>
 				</Col>
@@ -78,15 +81,23 @@ export const MovieInfo = () => {
 					<h4>Donde verla?</h4>
 				</Col>
 			</Row>
-			<Row className="justify-content-center">
-				<Col xs={3}>
-					<p>o1</p>
+			<Row className="justify-content-center mb-3">
+				<Col xs={4}>
+					<Image
+						src={netflixLogo}
+						fluid
+						className="customImage d-block m-auto"
+					/>
 				</Col>
-				<Col xs={3}>
-					<p>o2</p>
+				<Col xs={4}>
+					<Image
+						src={disneyLogo}
+						fluid
+						className="customImage d-block m-auto"
+					/>
 				</Col>
-				<Col xs={3}>
-					<p>o2</p>
+				<Col xs={4}>
+					<Image src={huluLogo} fluid className="customImage d-block m-auto" />
 				</Col>
 			</Row>
 		</Container>
