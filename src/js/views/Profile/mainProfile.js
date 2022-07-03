@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 // font awesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +9,7 @@ import { useHistory } from "react-router-dom";
 import img1 from "../../../img/chibi_saber.png";
 //include the styles
 import "../../../styles/mainProfile.css";
+import "../../../styles/utilities.css";
 // import context
 import { Context } from "../../store/appContext";
 
@@ -23,6 +24,16 @@ export const MainProfile = () => {
 			<Row className="mb-4">
 				<Col xs={12} className="text-center">
 					<Image src={img1} roundedCircle thumbnail className="customImage" />
+				</Col>
+			</Row>
+			{/* list button */}
+			<Row className="mb-4 justify-content-center">
+				<Col xs={10}>
+					<div className="d-grid">
+						<Button variant="primary" size="lg" className="customButton">
+							Mis listas
+						</Button>
+					</div>
 				</Col>
 			</Row>
 			{/* mail row */}
