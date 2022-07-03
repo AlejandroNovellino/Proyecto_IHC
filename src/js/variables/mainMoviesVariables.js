@@ -93,7 +93,7 @@ export const recommendedMovies = [
 	],
 	[
 		{
-			id: 6,
+			id: 2,
 			name: "Dune",
 			src: img7,
 			synopsis:
@@ -103,7 +103,7 @@ export const recommendedMovies = [
 			duration: "2h 35m",
 		},
 		{
-			id: 7,
+			id: 3,
 			name: "Enredados",
 			src: img8,
 			synopsis:
@@ -115,7 +115,7 @@ export const recommendedMovies = [
 	],
 	[
 		{
-			id: 8,
+			id: 4,
 			name: "Intensamente",
 			src: img9,
 			synopsis:
@@ -125,7 +125,7 @@ export const recommendedMovies = [
 			duration: "1h 35m",
 		},
 		{
-			id: 9,
+			id: 5,
 			name: "Parasitos",
 			src: img10,
 			synopsis:
@@ -162,7 +162,7 @@ export const popularMovies = [
 	],
 	[
 		{
-			id: 6,
+			id: 2,
 			name: "Dune",
 			src: img7,
 			synopsis:
@@ -172,7 +172,7 @@ export const popularMovies = [
 			duration: "2h 35m",
 		},
 		{
-			id: 7,
+			id: 3,
 			name: "Enredados",
 			src: img8,
 			synopsis:
@@ -184,7 +184,7 @@ export const popularMovies = [
 	],
 	[
 		{
-			id: 8,
+			id: 4,
 			name: "Intensamente",
 			src: img9,
 			synopsis:
@@ -194,7 +194,7 @@ export const popularMovies = [
 			duration: "1h 35m",
 		},
 		{
-			id: 9,
+			id: 5,
 			name: "Parasitos",
 			src: img10,
 			synopsis:
