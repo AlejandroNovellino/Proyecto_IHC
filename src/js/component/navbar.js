@@ -53,7 +53,11 @@ export const Navbar = () => {
 						/>
 					</Col>
 					<Col xs={8}>
-						<h2 className="m-0 text-center">{store.elementToDisplay?.name}</h2>
+						<h2 className="m-0 text-center">
+							{store.activeViewIndex !== 0
+								? store.elementToDisplay?.name
+								: null}
+						</h2>
 					</Col>
 					<Col xs={2}>
 						<FontAwesomeIcon

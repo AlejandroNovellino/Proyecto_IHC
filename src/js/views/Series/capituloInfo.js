@@ -18,10 +18,10 @@ export const CapituloInfo = () => {
 	// react dom history
 	const history = useHistory();
 
-    const handleClickOnCard = series => {
-        actions.setElementToDisplay(series);
-        history.push("/serie/info");
-    };
+	const handleClickOnCard = series => {
+		actions.setElementToDisplay(series);
+		history.push("/serie/info");
+	};
 
 	return (
 		<Container fluid className="mt-4 text-white">
@@ -35,26 +35,25 @@ export const CapituloInfo = () => {
 					/>
 				</Col>
 			</Row>
-            <Row className="px-2">
+			<Row className="px-2">
 				<Col xs={12}>
 					<Button
-                        className="btn btn-light"
-                        onClick={_ => handleClickOnCard(series)}
-                    >
-                       <h4>{series?.name}</h4>
-                    </Button>
+						className="btn btn-light"
+						onClick={_ => handleClickOnCard(series)}>
+						<h4>{series?.name}</h4>
+					</Button>
 				</Col>
 			</Row>
 			{/*capitulo info*/}
 			<Row className="px-2">
-            <Col xs={12} className="my-2">
+				<Col xs={12} className="my-2">
 					<h4 className="text-left m-0">{series?.episodio}</h4>
 				</Col>
 				<Col xs={12} className="my-1">
 					<p className="text-left m-0">{series?.nombre}</p>
 				</Col>
 			</Row>
-            {/*capitulo synopsis*/}
+			{/*capitulo synopsis*/}
 			<Row className="px-2">
 				<Col xs={12} className="synopsisContainer p-3">
 					<p className="text-center m-0">{series?.synopsis}</p>
@@ -77,7 +76,7 @@ export const CapituloInfo = () => {
 					<p>o2</p>
 				</Col>
 			</Row>
-            {/*capitulo score*/}
+			{/*capitulo score*/}
 			<Row className="justify-content-center my-2">
 				<Col xs={4} className="pe-0">
 					<p className="text-end">Puntuacion</p>

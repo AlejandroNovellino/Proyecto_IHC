@@ -34,17 +34,15 @@ export const SerieInfo = () => {
 					/>
 				</Col>
 			</Row>
-            {/*boton episodios*/}
-            <Row className="mb-4">
+			{/*boton episodios*/}
+			<Row className="mb-4">
 				<Col xs={12}>
-					<Button
-                        className="btn btn-light"
-                    >
-                       <h5>Episodios</h5>
-                    </Button>
+					<Button className="btn btn-light">
+						<h5>Episodios</h5>
+					</Button>
 				</Col>
 			</Row>
-            {/*capitulo synopsis*/}
+			{/*capitulo synopsis*/}
 			<Row className="px-2">
 				<Col xs={12} className="synopsisContainer p-3">
 					<p className="text-center m-0">{series?.about}</p>
@@ -74,8 +72,8 @@ export const SerieInfo = () => {
 				<Col xs={4}>
 					<Image src={huluLogo} fluid className="customImage d-block m-auto" />
 				</Col>
-			</Row>	
-            {/*Cast*/}
+			</Row>
+			{/*Cast*/}
 			<Row className="justify-content-center mt-3 mb-3">
 				<Col xs={12} className="text-center">
 					<h4>Reparto</h4>
