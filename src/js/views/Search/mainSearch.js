@@ -4,6 +4,7 @@ import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import custom components
 import { CustomCarousel } from "../../component/customCarousel";
+import { CustomCarouselSeries } from "../../component/customCarouselSeries";
 // react dom import
 import { useHistory } from "react-router-dom";
 
@@ -61,7 +62,7 @@ export const MainSearch = () => {
 						{/*row of popular series*/}
 						<Row className="my-3">
 							<Col xs={12}>
-								<CustomCarousel infoToDisplay={popularSeries} />
+								<CustomCarouselSeries infoToDisplay={popularSeries} />
 							</Col>
 						</Row>
 						{/*tittle of popular films*/}

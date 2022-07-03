@@ -12,6 +12,8 @@ import { MainProfile } from "./views/Profile/mainProfile";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
+import { CapituloInfo } from "./views/Series/capituloInfo";
+import { SerieInfo } from "./views/Series/serieInfo";
 
 //create your first component
 const Layout = () => {
@@ -28,6 +30,12 @@ const Layout = () => {
 						{/* series routes */}
 						<Route exact path="/series">
 							<MainSeries />
+						</Route>
+						<Route exact path="/serie/info">
+							<SerieInfo />
+						</Route>
+						<Route exact path="/capitulo/info">
+							<CapituloInfo />
 						</Route>
 						{/* movies routes */}
 						<Route exact path="/movies">
@@ -49,7 +57,7 @@ const Layout = () => {
 							<MainProfile />
 						</Route>
 						{/* redirect to the main view */}
-						<Redirect from="/" to="/movies" />
+						<Redirect from="/" to="/movie" />
 					</Switch>
 					<br />
 					<br />
