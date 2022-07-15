@@ -4,6 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			views: ["SERIES", "MOVIES", "SEARCH", "BILLBOARD", "PROFILE"],
 			activeViewIndex: 1,
 			elementToDisplay: null,
+			inList: false,
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -25,6 +26,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 			emptyElementToDisplay: _ => {
 				let store = getStore();
 				store.elementToDisplay = null;
+				setStore(store);
+			},
+			setInList: value => {
+				let store = getStore();
+				store.inList = value;
 				setStore(store);
 			},
 		},

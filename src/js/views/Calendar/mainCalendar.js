@@ -34,8 +34,8 @@ export const MainCalendar = () => {
 					<h2 className="ms-1">Peliculas en cartelera</h2>
 				</Col>
 			</Row>
-			<Row className="px-2">
-				<div className="customCalendar py-3 px-1">
+			<Row>
+				<div className="customCalendar py-4 px-3">
 					<FullCalendar
 						height={600}
 						headerToolbar={{
@@ -43,9 +43,9 @@ export const MainCalendar = () => {
 							right: "prev,next today",
 							center: "",
 						}}
-						footerToolbar={{
+						/*footerToolbar={{
 							center: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
-						}}
+						}}*/
 						plugins={[
 							dayGridPlugin,
 							bootstrap5Plugin,
@@ -53,7 +53,7 @@ export const MainCalendar = () => {
 							timeGridPlugin,
 							listPlugin,
 						]}
-						initialView="dayGridMonth"
+						initialView="timeGridDay"
 						themeSystem="bootstrap5"
 						selectable={true}
 						events={userEvents}

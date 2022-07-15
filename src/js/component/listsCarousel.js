@@ -22,9 +22,9 @@ export const ListCarousel = props => {
 	// info to display
 	const infoToDisplay = props.infoToDisplay;
 
-	const handleClickOnCard = movie => {
-		actions.setElementToDisplay(movie);
-		history.push("/movie/info");
+	const handleClickOnCard = list => {
+		actions.setInList(true);
+		history.push("/list-info", { list: list });
 	};
 
 	return (
@@ -36,11 +36,13 @@ export const ListCarousel = props => {
 							{lists.map((list, j) => {
 								return (
 									<Col xs={6} key={j}>
-										<Card className="customCard p-0" onClick={() => {}}>
+										<Card className="customCard p-0">
 											<Carousel indicators={false} controls={true} className="">
 												{list?.elements.map((element, k) => {
 													return (
-														<Carousel.Item key={k}>
+														<Carousel.Item
+															key={k}
+															onClick={() => handleClickOnCard(list)}>
 															<Card
 																className="customCard p-0"
 																onClick={() => {}}>

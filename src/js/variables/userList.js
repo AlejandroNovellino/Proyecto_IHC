@@ -12,6 +12,7 @@ import img10 from "../../img/deathnote.jpg";
 
 const list1 = {
 	name: "Series por ver",
+	type: "SERIES",
 	elements: [
 		{
 			id: 0,
@@ -38,6 +39,7 @@ const list1 = {
 
 const list2 = {
 	name: "Peliculas por ver",
+	type: "MOVIES",
 	elements: [
 		{
 			id: 0,
@@ -74,6 +76,7 @@ const list2 = {
 
 const list3 = {
 	name: "Peliculas para los niños",
+	type: "MOVIES",
 	elements: [
 		{
 			id: 5,

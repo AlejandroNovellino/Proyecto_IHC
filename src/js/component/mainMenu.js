@@ -23,6 +23,8 @@ export const MainMenu = () => {
 	const viewHandler = selectedView => {
 		// empty the info to display movie
 		actions.emptyElementToDisplay();
+		// set to false if a list was viewed
+		actions.setInList(false);
 		// set the active view index
 		actions.setActiveViewIndex(selectedView);
 		// push the url selected

@@ -1,5 +1,12 @@
 .customCalendar {
 	background-color: #081826;
+	border-radius: 15px;
+}
+
+.fc-theme-bootstrap5 .fc-scrollgrid {
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-radius: 15px;
 }
 
 .fc-theme-bootstrap5-shaded {

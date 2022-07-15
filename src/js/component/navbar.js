@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 // react dom import
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 // font awesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import context
@@ -15,33 +15,42 @@ export const Navbar = () => {
 	const { store, actions } = useContext(Context);
 	// react dom history
 	const history = useHistory();
+	// react dom location
+	const location = useLocation();
 
 	// back handler
-	const handleBack = selectedView => {
+	const handleBack = _ => {
 		// empty the info to display movie
 		actions.emptyElementToDisplay();
-		// push the url selected
-		switch (store.activeViewIndex) {
-			case 0:
-				history.push("/series");
-				break;
-			case 1:
-				history.push("/movies");
-				break;
-			case 2:
-				history.push("/search");
-				break;
-			case 3:
-				history.push("/calendar");
-				break;
-			case 4:
-				history.push("/profile");
-				break;
-		}
+		// back in the history
+		history.goBack();
+	};
+
+	//handle back from the list
+	const handleBackFromList = _ => {
+		actions.setInList(false);
+		history.goBack();
 	};
 
 	return (
 		<Container fluid className="customNavbar p-4">
+			{store?.inList && !store?.elementToDisplay && (
+				<Row>
+					<Col xs={2}>
+						<FontAwesomeIcon
+							icon="fas fa-angle-left"
+							size="2x"
+							className="d-block mx-auto pt-1"
+							onClick={handleBackFromList}
+						/>
+					</Col>
+					<Col xs={10}>
+						<h2 className="m-0 text-center">
+							{"Lista: " + location.state?.list?.name}
+						</h2>
+					</Col>
+				</Row>
+			)}
 			{store?.elementToDisplay && (
 				<Row>
 					<Col xs={2}>
@@ -49,7 +58,7 @@ export const Navbar = () => {
 							icon="fas fa-angle-left"
 							size="2x"
 							className="d-block mx-auto pt-1"
-							onClick={() => handleBack("movies")}
+							onClick={handleBack}
 						/>
 					</Col>
 					<Col xs={8}>
@@ -68,7 +77,7 @@ export const Navbar = () => {
 					</Col>
 				</Row>
 			)}
-			{!store?.elementToDisplay && (
+			{!store?.elementToDisplay && !store?.inList && (
 				<Row>
 					<Col xs={10}>
 						<h2 className="m-0">{actions.getActiveView()}</h2>
