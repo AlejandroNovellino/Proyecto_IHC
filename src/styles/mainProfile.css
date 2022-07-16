@@ -5,6 +5,15 @@
 	color: white;
 }
 
+.modal-body {
+	padding: 5px;
+}
+
+.modal-content {
+	background-color: #1d4259;
+	color: white;
+}
+
 .customImage.customImage {
 	border-color: #081826;
 	border-width: thick;

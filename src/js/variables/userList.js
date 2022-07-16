@@ -101,4 +101,5 @@ const list3 = {
 	],
 };
 
+export const userListProfile = [list1, list2, list3];
 export const userLists = [[list1, list2], [list3]];
