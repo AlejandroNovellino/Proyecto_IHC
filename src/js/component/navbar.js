@@ -21,7 +21,9 @@ export const Navbar = () => {
 	// back handler
 	const handleBack = _ => {
 		// empty the info to display movie
-		actions.emptyElementToDisplay();
+		if (history.location?.pathname != "/serie/info") {
+			actions.emptyElementToDisplay();
+		}
 		// back in the history
 		history.goBack();
 	};

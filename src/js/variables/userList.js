@@ -10,6 +10,17 @@ import img8 from "../../img/dark.jpg";
 import img9 from "../../img/kenobi.jpg";
 import img10 from "../../img/deathnote.jpg";
 
+import img1Banner from "../../img/wandaBanner.jpg";
+import img2Banner from "../../img/darkBanner.jpg";
+import img3Banner from "../../img/kenobiBanner.jpg";
+import img4Banner from "../../img/deathnoteBanner.jpg";
+import img5Banner from "../../img/euphoriaBanner.jpg";
+import img6Banner from "../../img/strangerBanner.jpg";
+import img7Banner from "../../img/mandalorianBanner.jpg";
+import img8Banner from "../../img/squidgameBanner.jpg";
+import img9Banner from "../../img/witcherBanner.jpg";
+import img10Banner from "../../img/arcaneBanner.jpg";
+
 const list1 = {
 	name: "Series por ver",
 	type: "SERIES",
@@ -18,21 +29,33 @@ const list1 = {
 			id: 0,
 			name: "WandaVision",
 			src: img7,
+			image: img1Banner,
+			about:
+				"WandaVision combina el estilo cómico de situaciones clásicas con el Universo Cinematográfico de Marvel en el que Wanda Maximoff y Visión, dos seres superpoderosos que viven su vida suburbana ideal, comienzan a sospechar que no todo es lo que parece.",
 		},
 		{
 			id: 1,
 			name: "Dark",
 			src: img8,
+			image: img2Banner,
+			about:
+				"En Winden (2019), un pequeño pueblo ficticio situado en Alemania, la desaparición de un niño pone en alerta a todos los vecinos. El cuerpo de policía trata de investigar el caso sin hallar ninguna explicación. En el municipio viven cuatro familias: los Kahnwald, los Nielsen, los Doppler y los Tiedemann. Todas permanecen unidas ante los misteriosos acontecimientos. Sin embargo, todo cambia el día que Mikkel, el hijo menor de la familia Nielsen, desaparece sin dejar rastro.",
 		},
 		{
 			id: 2,
 			name: "Kenobi",
 			src: img9,
+			image: img3Banner,
+			about:
+				"Se centra en Obi-Wan Kenobi 10 años después del final de las Guerras Clon, donde enfrentó su mayor derrota: la caída y corrupción de su mejor amigo y aprendiz de Jedi, Anakin Skywalker quién se convirtió en el malvado Lord Sith Darth Vader.",
 		},
 		{
 			id: 3,
 			name: "Death Note",
 			src: img10,
+			image: img4Banner,
+			about:
+				"Light Yagami es un joven estudiante que un día encuentra un cuaderno llamado Death Note que tiene una macabra propiedad: si el nombre de una persona aparece escrito en él, morirá. Light decide, entonces, embarcarse en una misión para librar al mundo de todos los criminales. Sin embargo, su plan empieza a torcerse cuando L, un brillante detective, intenta descifrar el misterio que rodea a todas estas muertes.",
 		},
 	],
 };
