@@ -28,6 +28,12 @@ export const MainCalendar = () => {
 	// react dom history
 	const history = useHistory();
 
+	// handle click on movie card
+	const handleMovieCardClick = element => {
+		actions.setElementToDisplay(element);
+		history.push("/new-movie/info");
+	};
+
 	return (
 		<Container fluid className="text-white mb-4">
 			<Row>
@@ -46,16 +52,19 @@ export const MainCalendar = () => {
 							</Row>
 							{month.days.map((day, j) => {
 								return (
-									<Card key={j} className="backgroundHelper my-4">
+									<Card
+										key={j}
+										className="backgroundHelper my-4"
+										onClick={_ => handleMovieCardClick(day.movie)}>
 										<Card.Body className="py-0">
 											<Row key={j} className="my-4">
 												<Col xs={3}>
-													<p class="fs-3 fw-bold ms-4 mt-2">{day.day}</p>
+													<p className="fs-3 fw-bold ms-4 mt-2">{day.day}</p>
 												</Col>
 												<Col xs={9}>
 													<Row>
 														<Col xs={12}>
-															<p class="fs-3 m-0">{day.movie}</p>
+															<p className="fs-3 m-0">{day.movie.name}</p>
 														</Col>
 														<Col xs={12}>{day.cinema}</Col>
 													</Row>

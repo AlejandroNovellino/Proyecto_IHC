@@ -10,6 +10,7 @@ import { MainSearch } from "./views/Search/mainSearch";
 import { MainCalendar } from "./views/Calendar/mainCalendar";
 import { MainProfile } from "./views/Profile/mainProfile";
 import { MainListInfo } from "./views/Lists/mainListInfo";
+import { NewMovieInfo } from "./views/Calendar/newMovieInfo";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -52,6 +53,10 @@ const Layout = () => {
 						{/* calendar routes */}
 						<Route exact path="/calendar">
 							<MainCalendar />
+						</Route>
+						{/* new movie info */}
+						<Route exact path="/new-movie/info">
+							<NewMovieInfo />
 						</Route>
 						{/* user profile routes */}
 						<Route exact path="/profile">
